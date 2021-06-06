@@ -4,11 +4,11 @@ on: push
 
 jobs:
   convert_via_pandoc:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - run: |
-          mkdir build
+          mkdir -p build
       - uses: docker://pandoc/latex:2.12
         with:
           args: >-
@@ -21,7 +21,7 @@ jobs:
             --pdf-engine=xelatex
             --include-in-header="layout/print.tex"
             src/index.md
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v2
         with:
           name: build
-          path: build
+          path: build/
