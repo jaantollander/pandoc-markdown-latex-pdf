@@ -1,1 +1,1 @@
-# Document Project Example
+# Markdown LaTeX Pandoc Example
