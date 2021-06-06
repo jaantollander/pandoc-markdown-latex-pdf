@@ -10,32 +10,29 @@ jobs:
       - run: |
           mkdir -p build
       - uses: docker://pandoc/latex:2.12
-      - run: ./build.sh pdf_print
-      - run: ./build.sh pdf_ereader
-      # - uses: docker://pandoc/latex:2.12
-      #   with:
-      #     args: >-
-      #       content/index.md
-      #       --resource-path=content
-      #       --citeproc
-      #       --csl=assets/citation-style.csl
-      #       --from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex
-      #       --to=latex
-      #       --output=build/output_print.pdf
-      #       --pdf-engine=xelatex
-      #       --include-in-header=layouts/print.tex
-      # - uses: docker://pandoc/latex:2.12
-      #   with:
-      #     args: >-
-      #       content/index.md
-      #       --resource-path=content
-      #       --citeproc
-      #       --csl=assets/citation-style.csl
-      #       --from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex
-      #       --to=latex
-      #       --output=build/output_ereader.pdf
-      #       --pdf-engine=xelatex
-      #       --include-in-header=layouts/ereader.tex
+        with:
+          args: >-
+            content/index.md
+            --resource-path=content
+            --citeproc
+            --csl=assets/citation-style.csl
+            --from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex
+            --to=latex
+            --output=build/output_print.pdf
+            --pdf-engine=xelatex
+            --include-in-header=layouts/print.tex
+      - uses: docker://pandoc/latex:2.12
+        with:
+          args: >-
+            content/index.md
+            --resource-path=content
+            --citeproc
+            --csl=assets/citation-style.csl
+            --from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex
+            --to=latex
+            --output=build/output_ereader.pdf
+            --pdf-engine=xelatex
+            --include-in-header=layouts/ereader.tex
       - uses: actions/upload-artifact@v2
         with:
           name: build
