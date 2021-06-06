@@ -1,4 +1,4 @@
-SRCDIR=src
+CONTENTDIR=content
 BUILDDIR=build
 FILENAME=index
 ASSETSDIR=assets
@@ -9,26 +9,26 @@ download-assets:
 
 pdf-print:
 	mkdir $(BUILDDIR) -p
-	pandoc $(SRCDIR)/$(FILENAME).md \
-	--resource-path=$(SRCDIR) \
+	pandoc $(CONTENTDIR)/$(FILENAME).md \
+	--resource-path=$(CONTENTDIR) \
 	--citeproc \
 	--csl=$(ASSETSDIR)/citation-style.csl \
 	--from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex \
 	--to=latex \
 	--output=$(BUILDDIR)/$(FILENAME)_print.pdf \
 	--pdf-engine=xelatex \
-	--include-in-header="layout/print.tex" \
+	--include-in-header="layouts/print.tex" \
 
 pdf-ereader:
 	mkdir $(BUILDDIR) -p
-	pandoc $(SRCDIR)/$(FILENAME).md \
-	--resource-path=$(SRCDIR) \
+	pandoc $(CONTENTDIR)/$(FILENAME).md \
+	--resource-path=$(CONTENTDIR) \
 	--citeproc \
 	--csl=$(ASSETSDIR)/citation-style.csl \
 	--from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex \
 	--to=latex \
 	--output=$(BUILDDIR)/$(FILENAME)_ereader.pdf \
 	--pdf-engine=xelatex \
-	--include-in-header="layout/ereader.tex" \
+	--include-in-header="layouts/ereader.tex" \
 
 pdf: pdf-print pdf-ereader
