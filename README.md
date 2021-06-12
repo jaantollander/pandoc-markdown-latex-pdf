@@ -10,11 +10,11 @@ We also automate the build and release workflows using GitHub Actions, based on 
 ## Content, Assets and Layouts
 The directory structure aims to separate the structure and presentation of the document. We place structural elements into the content directory and presentational elements into assets and layouts directories as follows:
 
-The [`content`](./content/) directory contains the Markdown files, bibliography file in BibTeX format, and other content such as images.
+The [`content/`](./content/) directory contains the Markdown files, bibliography file in BibTeX format, and other content such as images.
 
-The [`assets`](./assets/) directory contains assets such as the Citation Style Language, which defines the style for citations.
+The [`assets/`](./assets/) directory contains assets such as the Citation Style Language, which defines the style for citations.
 
-The [`layouts`](./layouts/) directory contains the different layouts for output documents such as for print and e-reader.
+The [`layouts/`](./layouts/) directory contains the different layouts for output documents such as for print and e-reader.
 
 
 ## Building Documents
@@ -43,3 +43,12 @@ We can also create an e-reader-friendly output using:
 bash build.sh pdf_ereader
 ```
 These commands are also available under the `Makefile`, for example, `make pdf-print` or `make pdf-ereader`.
+
+
+## Releasing Document Version
+We can create a new release by tagging a commit with a new version tag in Git and pushing the tag into GitHub.
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
