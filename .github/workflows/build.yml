@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          mkdir -p build
       - uses: docker://pandoc/latex:2.12
         with:
           args: >-
@@ -18,7 +16,7 @@ jobs:
             --csl=assets/citation-style.csl
             --from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex
             --to=latex
-            --output=build/output_print.pdf
+            --output=output_print.pdf
             --pdf-engine=xelatex
             --include-in-header=layouts/print.tex
       - uses: docker://pandoc/latex:2.12
@@ -30,10 +28,12 @@ jobs:
             --csl=assets/citation-style.csl
             --from=markdown+tex_math_single_backslash+tex_math_dollars+raw_tex
             --to=latex
-            --output=build/output_ereader.pdf
+            --output=output_ereader.pdf
             --pdf-engine=xelatex
             --include-in-header=layouts/ereader.tex
       - uses: actions/upload-artifact@v2
         with:
           name: build
-          path: build/
+          path: |
+            output_print.pdf
+            output_ereader.pdf
