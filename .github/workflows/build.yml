@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - uses: docker://pandoc/latex:2.12
+      - name: print
+        uses: docker://pandoc/latex:2.12
         with:
           args: >-
             content/index.md
@@ -19,7 +20,8 @@ jobs:
             --output=output_print.pdf
             --pdf-engine=xelatex
             --include-in-header=layouts/print.tex
-      - uses: docker://pandoc/latex:2.12
+      - name: ereader
+        uses: docker://pandoc/latex:2.12
         with:
           args: >-
             content/index.md
@@ -33,9 +35,16 @@ jobs:
             --include-in-header=layouts/ereader.tex
       - uses: actions/upload-artifact@v2
         with:
-          name: output_print.pdf
-          path: output_print.pdf
-      - uses: actions/upload-artifact@v2
+          name: build
+          path: |
+            output_print.pdf
+            output_ereader.pdf
+      - name: release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
-          name: output_ereader.pdf
-          path: output_ereader.pdf
+          files: |
+            output_print.pdf
+            output_ereader.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
