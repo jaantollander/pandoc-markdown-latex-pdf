@@ -19,7 +19,7 @@ pdf_print() {
         --csl="${ASSETSDIR}/citation-style.csl" \
         --from="markdown+tex_math_single_backslash+tex_math_dollars+raw_tex" \
         --to="latex" \
-        --output="${BUILDDIR}/${FILENAME}_print.pdf" \
+        --output="${BUILDDIR}/output_print.pdf" \
         --pdf-engine="xelatex" \
         --include-in-header="layouts/print.tex"
 }
@@ -33,7 +33,7 @@ pdf_ereader() {
         --csl="${ASSETSDIR}/citation-style.csl" \
         --from="markdown+tex_math_single_backslash+tex_math_dollars+raw_tex" \
         --to="latex" \
-        --output="${BUILDDIR}/${FILENAME}_ereader.pdf" \
+        --output="${BUILDDIR}/output_ereader.pdf" \
         --pdf-engine="xelatex" \
         --include-in-header="layouts/ereader.tex"
 }
