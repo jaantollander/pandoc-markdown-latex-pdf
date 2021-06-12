@@ -12,6 +12,7 @@ download_assets() {
 
 pdf_print() {
     mkdir "${BUILDDIR}" -p
+    echo "Creating print output"
     pandoc "${CONTENTDIR}/${FILENAME}.md" \
         --resource-path="${CONTENTDIR}" \
         --citeproc \
@@ -25,6 +26,7 @@ pdf_print() {
 
 pdf_ereader() {
     mkdir "${BUILDDIR}" -p
+    echo "Creating ereader output"
     pandoc "${CONTENTDIR}/${FILENAME}.md" \
         --resource-path="${CONTENTDIR}" \
         --citeproc \

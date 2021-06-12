@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - name: print
+      - name: Print output
         uses: docker://pandoc/latex:2.12
         with:
           args: >-
@@ -20,7 +20,7 @@ jobs:
             --output=output_print.pdf
             --pdf-engine=xelatex
             --include-in-header=layouts/print.tex
-      - name: ereader
+      - name: Ereader output
         uses: docker://pandoc/latex:2.12
         with:
           args: >-
