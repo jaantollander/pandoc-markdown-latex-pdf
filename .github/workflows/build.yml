@@ -33,7 +33,9 @@ jobs:
             --include-in-header=layouts/ereader.tex
       - uses: actions/upload-artifact@v2
         with:
-          name: build
-          path: |
-            output_print.pdf
-            output_ereader.pdf
+          name: output_print.pdf
+          path: output_print.pdf
+      - uses: actions/upload-artifact@v2
+        with:
+          name: output_ereader.pdf
+          path: output_ereader.pdf
