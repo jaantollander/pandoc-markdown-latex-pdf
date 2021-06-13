@@ -1,4 +1,4 @@
-# Markdown-LaTeX-Pandoc Example
+# Pandoc-Markdown-LaTeX Example
 ## Overview
 This repository demonstrates how to produce scientific, academic, and technical PDF documents such as essays, reports, or thesis using the Markdown language and manage the document using the Git version control system. Since PDF documents have a static layout, we show how to produce multiple output documents with different layouts optimized for print and various reading devices with different screen sizes.
 
