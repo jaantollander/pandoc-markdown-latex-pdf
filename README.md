@@ -44,7 +44,7 @@ bash build.sh pdf_ereader
 These commands are also available under the [`Makefile`](./Makefile), for example, `make pdf-print` or `make pdf-ereader`.
 
 
-## Releasing Document Version
+## Releasing New Document Versions
 Document project should follow [semantic version](https://semver.org/). We can create a new release by tagging a commit with a new version tag in Git and pushing the tag into GitHub.
 
 ```bash
@@ -54,6 +54,8 @@ git push origin v0.1.0
 
 
 ## Keeping a Changelog
+Document projects can [keep a changelog](https://keepachangelog.com) in `CHANGELOG.md` file to explain changes between versions in human-readable language. Changelogs are helpful for large, evolving documents.
 
 
 ## Licensing Documents
+We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license.
