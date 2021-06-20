@@ -32,13 +32,13 @@ chmod +x build.sh
 Now, we can execute the build script using Bash with the desired function name as an argument. For example, we can create a print output using:
 
 ```bash
-bash build.sh pdf_print
+./build.sh pdf_print
 ```
 
 We can also create an e-reader-friendly output using:
 
 ```bash
-bash build.sh pdf_ereader
+./build.sh pdf_ereader
 ```
 
 These commands are also available under the [`Makefile`](./Makefile), for example, `make pdf-print` or `make pdf-ereader`.
