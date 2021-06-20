@@ -2,7 +2,7 @@
 ## Overview
 This repository demonstrates how to produce scientific, academic, and technical PDF documents such as essays, reports, or thesis using the Markdown language and manage the document using the Git version control system. Since PDF documents have a static layout, we show how to produce multiple output documents with different layouts optimized for print and various reading devices with different screen sizes.
 
-We use [*Pandoc*](https://pandoc.org/) to convert the Markdown document into [*LaTeX*](https://www.latex-project.org/) as an intermediate format and then into a PDF document via XeLaTeX to support Unicode symbols. We also automate the build and release workflows using GitHub Actions, based on [*Using Pandoc with GitHub Actions*](https://github.com/pandoc/pandoc-action-example). After every push, GitHub Actions create the output documents and upload them as artifacts. If the push is tagged, the action will publish a release and upload the documents and source code as assets. 
+We use [*Pandoc*](https://pandoc.org/) to convert the Markdown document into [*LaTeX*](https://www.latex-project.org/) as an intermediate format and then into a PDF document via *XeLaTeX* to support Unicode symbols. We also automate the build and release workflows using *GitHub Actions*, based on [*Using Pandoc with GitHub Actions*](https://github.com/pandoc/pandoc-action-example). After every push, GitHub Actions create the output documents and upload them as artifacts. If the push is tagged, the action will publish a release and upload the documents and source code as assets. 
 
 You should navigate [**Releases**](https://github.com/jaantollander/markdown-latex-pandoc-example/releases) to see out how GitHub displays the released PDF document versions.
 
@@ -45,7 +45,7 @@ These commands are also available under the [`Makefile`](./Makefile), for exampl
 
 
 ## Releasing New Document Versions
-Document project should follow [semantic version](https://semver.org/). We can create a new release by tagging a commit with a new version tag in Git and pushing the tag into GitHub.
+Document project should follow [semantic versioning](https://semver.org/). We can create a new release by tagging a commit with a new version tag in Git and pushing the tag into the remote repository. For example, we can release version `v0.1.0` as follows:
 
 ```bash
 git tag v0.1.0
@@ -54,8 +54,8 @@ git push origin v0.1.0
 
 
 ## Keeping a Changelog
-Document projects can [keep a changelog](https://keepachangelog.com) in `CHANGELOG.md` file to explain changes between versions in human-readable language. Changelogs are helpful for large, evolving documents.
+Complex, evolving document projects should [keep a changelog](https://keepachangelog.com) in `CHANGELOG.md` file to explain changes between versions in human-readable language.
 
 
 ## Licensing Documents
-We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license.
+We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license. It is a convention to store the license information to `LICENSE` file.
