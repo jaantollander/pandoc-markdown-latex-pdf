@@ -12,7 +12,7 @@ download_csl() {
 
 pdf_print() {
     mkdir "${BUILDDIR}" -p
-    echo "Creating print output"
+    echo "Creating PDF print output"
     pandoc "${CONTENTDIR}/${FILENAME}.md" \
         --resource-path="${CONTENTDIR}" \
         --citeproc \
@@ -26,7 +26,7 @@ pdf_print() {
 
 pdf_ereader() {
     mkdir "${BUILDDIR}" -p
-    echo "Creating ereader output"
+    echo "Creating PDF ereader output"
     pandoc "${CONTENTDIR}/${FILENAME}.md" \
         --resource-path="${CONTENTDIR}" \
         --citeproc \
@@ -36,6 +36,10 @@ pdf_ereader() {
         --output="${BUILDDIR}/output_ereader.pdf" \
         --pdf-engine="xelatex" \
         --include-in-header="layouts/ereader.tex"
+}
+
+clean() {
+    rm -r "${BUILDDIR}"
 }
 
 # Allows to call a function based on arguments passed to the script

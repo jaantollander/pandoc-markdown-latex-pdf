@@ -1,4 +1,4 @@
-# Pandoc-Markdown-LaTeX Example
+# Pandoc-Markdown-LaTeX-PDF Example
 ## Overview
 This repository demonstrates how to produce scientific, academic, and technical PDF documents such as essays, reports, or thesis using the Markdown language and manage the document using the Git version control system. Since PDF documents have a static layout, we show how to produce multiple output documents with different layouts optimized for print and various reading devices with different screen sizes.
 
@@ -45,9 +45,15 @@ These commands are also available under the [`Makefile`](./Makefile), for exampl
 
 
 ## Releasing Document Version
-We can create a new release by tagging a commit with a new version tag in Git and pushing the tag into GitHub.
+Document project should follow [semantic version](https://semver.org/). We can create a new release by tagging a commit with a new version tag in Git and pushing the tag into GitHub.
 
 ```bash
 git tag v0.1.0
 git push origin v0.1.0
 ```
+
+
+## Keeping a Changelog
+
+
+## Licensing Documents

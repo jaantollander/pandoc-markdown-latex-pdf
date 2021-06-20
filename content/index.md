@@ -1,5 +1,5 @@
 ---
-title: "Pandoc-Markdown-Latex Example"
+title: "Pandoc-Markdown-LaTeX-PDF Example"
 date: "2021-06-06"
 author: "Jaan Tollander de Balsch"
 bibliography: "bibliography.bib"
