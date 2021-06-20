@@ -62,3 +62,17 @@ Complex, evolving document projects should [keep a changelog](https://keepachang
 
 ## Licensing Documents
 We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license. It is a convention to store the license information to `LICENSE` file.
+
+
+## Adding Badges
+We can add badges with [shields.io](https://shields.io/) to the `README.md` file to indicate the most recent release version and build status. You can search for the *GitHub release* and *GitHub workflow status* badge, then add your repository information and copy the badge as Markdown. The copied badge is an vector graphics image, similar to the code below:
+
+```markdown
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)
+```
+
+You can wrap the badge image in a link pointing to the appropriate resource as follows:
+
+```markdown
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
+``` 
