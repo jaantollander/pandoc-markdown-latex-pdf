@@ -1,4 +1,7 @@
 # Pandoc-Markdown-LaTeX-PDF Example
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jaantollander/pandoc-markdown-latex-pdf-example/Build)](https://github.com/jaantollander/pandoc-markdown-latex-pdf-example/actions/workflows/build.yml)
+
 ## Overview
 This repository demonstrates how to produce scientific, academic, and technical PDF documents such as essays, reports, or thesis using the Markdown language and manage the document using the Git version control system. Since PDF documents have a static layout, we show how to produce multiple output documents with different layouts optimized for print and various reading devices with different screen sizes.
 
