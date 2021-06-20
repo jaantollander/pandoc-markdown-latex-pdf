@@ -74,5 +74,11 @@ We can add badges with [shields.io](https://shields.io/) to the `README.md` file
 You can wrap the badge image in a link pointing to the appropriate resource as follows:
 
 ```markdown
+[<place-the-badge-inside-the-square-brackets>](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
+```
+
+Resulting Markdown will look as follows:
+
+```markdown
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
-``` 
+```
