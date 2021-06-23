@@ -7,7 +7,7 @@ This repository demonstrates how to produce scientific, academic, and technical 
 
 We use [*Pandoc*](https://pandoc.org/) to convert the Markdown document into [*LaTeX*](https://www.latex-project.org/) as an intermediate format and then into a PDF document via *XeLaTeX* to support Unicode symbols. We also automate the build and release workflows using *GitHub Actions*, based on [*Using Pandoc with GitHub Actions*](https://github.com/pandoc/pandoc-action-example). After every push, GitHub Actions create the output documents and upload them as artifacts. If the push is tagged, the action will publish a release and upload the documents and source code as assets. 
 
-You should navigate [**Releases**](https://github.com/jaantollander/markdown-latex-pandoc-example/releases) to see out how GitHub displays the released PDF document versions.
+You should navigate [**Releases**](https://github.com/jaantollander/pandoc-markdown-latex-pdf-example/releases) to see out how GitHub displays the released PDF document versions.
 
 
 ## Content, Assets and Layouts
@@ -54,6 +54,8 @@ Document project should follow [semantic versioning](https://semver.org/). We ca
 git tag v0.1.0
 git push origin v0.1.0
 ```
+
+Pushing a new tag triggers GitHub Actions to create and publish a new release to the [Releases](https://github.com/jaantollander/pandoc-markdown-latex-pdf-example/releases) page with new document versions as assets.
 
 
 ## Keeping a Changelog
