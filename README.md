@@ -32,7 +32,7 @@ We should give execution right to the `build.sh` shell script.
 chmod +x build.sh
 ```
 
-Now, we can execute the build script using Bash with the desired function name as an argument. For example, we can create a print output using:
+Now, we can execute the build script using shell with the desired function name as an argument. For example, we can create a print output using:
 
 ```bash
 ./build.sh pdf_print
@@ -64,7 +64,15 @@ Complex, evolving document projects should [keep a changelog](https://keepachang
 We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license. It is a convention to store the license information to `LICENSE` file.
 
 
+## Making Documents Citable
+We can follow the instructions on the GitHub guide, [Making Your Code Citable](https://guides.github.com/activities/citable-code/), to create a citable repository by publishing it on [Zenodo](https://zenodo.org/), an Open Science publishing platform operated by CERN. 
+
+First, we need to log in to Zenodo, navigate to our profile, and authorize Zenodo to access our GitHub account. Then, we can choose a repository for archival. Zenodo automatically archives each release we make on our GitHub repository. We need at least one release to create a Digital Object Identifier (DOI) for our project. DOI provides a unique, immutable pointer to the document project, which allows us to collect citation data and change the underlying GitHub repository URL without worrying about breaking links. We can add the DOI as a badge to the `README.md` file. Finally, to make it easy to cite our project, we can export a BibTeX citation and write it in the `README.md` file as a code field. Alternatively, we can provide it as `CITATION.bib` file in the repository.
+
+
 ## Adding Badges
+![](https://img.shields.io/badge/badge-message-blue)
+
 We can add badges with [shields.io](https://shields.io/) to the `README.md` file to indicate the most recent release version and build status. You can search for the *GitHub release* and *GitHub workflow status* badge, then add your repository information and copy the badge as Markdown. The copied badge is an vector graphics image, similar to the code below:
 
 ```markdown
