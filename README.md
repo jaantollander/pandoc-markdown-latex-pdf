@@ -60,11 +60,11 @@ Pushing a new tag triggers GitHub Actions to create and publish a new release to
 
 
 ## Keeping a Changelog
-Complex, evolving document projects should [keep a changelog](https://keepachangelog.com) in `CHANGELOG.md` file to explain changes between versions in human-readable language.
+Complex, evolving document projects should [keep a changelog](https://keepachangelog.com) in [`CHANGELOG.md`](./CHANGELOG.md) file to explain changes between versions in human-readable language.
 
 
 ## Licensing Documents
-We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license. It is a convention to store the license information to `LICENSE` file.
+We should always [choose a license](https://choosealicense.com/) for document projects. Various [Creative Commons](https://creativecommons.org/licenses/) licenses are popular for creative works and documents. Alternatively, we can open-source licenses such as the [MIT](https://choosealicense.com/licenses/mit/) license. It is a convention to store the license information to [`LICENSE`](./LICENSE) file.
 
 
 ## Making Documents Citable
