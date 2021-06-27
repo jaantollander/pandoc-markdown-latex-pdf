@@ -1,4 +1,5 @@
 # Pandoc-Markdown-LaTeX-PDF
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5035130.svg)](https://doi.org/10.5281/zenodo.5035130)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf?sort=semver)](https://github.com/jaantollander/pandoc-markdown-latex-pdf/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jaantollander/pandoc-markdown-latex-pdf/Build)](https://github.com/jaantollander/pandoc-markdown-latex-pdf/actions/workflows/build.yml)
 [![GitHub](https://img.shields.io/github/license/jaantollander/pandoc-markdown-latex-pdf)](./LICENSE)
@@ -72,7 +73,7 @@ We should always [choose a license](https://choosealicense.com/) for document pr
 ## Making Documents Citable
 We can follow the instructions on the GitHub guide, [Making Your Code Citable](https://guides.github.com/activities/citable-code/), to create a citable repository by publishing it on [Zenodo](https://zenodo.org/), an Open Science publishing platform operated by CERN. 
 
-First, we need to log in to Zenodo, navigate to our profile, and authorize Zenodo to access our GitHub account. Then, we can choose our document project repository for archival. Zenodo automatically archives each release we make to the repository. We need at least one release to create a Digital Object Identifier (DOI), which provides a unique, immutable pointer to the repository, allowing us to collect citation data or changing the underlying GitHub repository URL without breaking existing links. We can add the DOI as a badge to the `README.md` file.  Finally, we can make citing our repository easier by exporting a BibTeX citation and provide it in the `README.md` file as a code field or as a `CITATION.bib` file.
+First, we need to log in to Zenodo, navigate to our profile, and authorize Zenodo to access our GitHub account. Then, we can choose our document project repository for archival. Zenodo automatically archives each release we make to the repository. We need at least one release to create a Digital Object Identifier (DOI), which provides a unique, immutable pointer to the repository, allowing us to collect citation data or changing the underlying GitHub repository URL without breaking existing links. We can add the DOI as a badge to the `README.md` file. Finally, we can cite our repository by exporting a citation from the Zenodo archive. Zenodo offers BibTeX, JSON, and XML-based citation file formats which you can find under the *Export* section.
 
 
 ## Adding Badges
