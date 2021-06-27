@@ -1,14 +1,14 @@
-# Pandoc-Markdown-LaTeX-PDF Example
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jaantollander/pandoc-markdown-latex-pdf-example/Build)](https://github.com/jaantollander/pandoc-markdown-latex-pdf-example/actions/workflows/build.yml)
-[![GitHub](https://img.shields.io/github/license/jaantollander/pandoc-markdown-latex-pdf-example)](./LICENSE)
+# Pandoc-Markdown-LaTeX-PDF
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf?sort=semver)](https://github.com/jaantollander/pandoc-markdown-latex-pdf/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jaantollander/pandoc-markdown-latex-pdf/Build)](https://github.com/jaantollander/pandoc-markdown-latex-pdf/actions/workflows/build.yml)
+[![GitHub](https://img.shields.io/github/license/jaantollander/pandoc-markdown-latex-pdf)](./LICENSE)
 
 ## Overview
 This repository demonstrates how to produce scientific, academic, and technical PDF documents such as essays, reports, or thesis using the Markdown language and manage the document using the Git version control system. Since PDF documents have a static layout, we show how to produce multiple output documents with different layouts optimized for print and various reading devices with different screen sizes.
 
 We use [*Pandoc*](https://pandoc.org/) to convert the Markdown document into [*LaTeX*](https://www.latex-project.org/) as an intermediate format and then into a PDF document via *XeLaTeX* to support Unicode symbols. We also automate the build and release workflows using *GitHub Actions*, based on [*Using Pandoc with GitHub Actions*](https://github.com/pandoc/pandoc-action-example). After every push, GitHub Actions create the output documents and upload them as artifacts. If the push is tagged, the action will publish a release and upload the documents and source code as assets. 
 
-You should navigate [**Releases**](https://github.com/jaantollander/pandoc-markdown-latex-pdf-example/releases) to see out how GitHub displays the released PDF document versions.
+You should navigate [**Releases**](https://github.com/jaantollander/pandoc-markdown-latex-pdf/releases) to see out how GitHub displays the released PDF document versions.
 
 
 ## Content, Assets and Layouts
@@ -56,7 +56,7 @@ git tag v0.1.0
 git push origin v0.1.0
 ```
 
-Pushing a new tag triggers GitHub Actions to create and publish a new release to the [Releases](https://github.com/jaantollander/pandoc-markdown-latex-pdf-example/releases) page with new document versions as assets.
+Pushing a new tag triggers GitHub Actions to create and publish a new release to the [Releases](https://github.com/jaantollander/pandoc-markdown-latex-pdf/releases) page with new document versions as assets.
 
 
 ## Keeping a Changelog
@@ -79,17 +79,17 @@ First, we need to log in to Zenodo, navigate to our profile, and authorize Zenod
 We can add badges with [shields.io](https://shields.io/) to the `README.md` file to indicate the most recent release version and build status. You can search for the *GitHub release* and *GitHub workflow status* badge, then add your repository information and copy the badge as Markdown. The copied badge is an vector graphics image, similar to the code below:
 
 ```markdown
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf?sort=semver)
 ```
 
 You can wrap the badge image in a link pointing to the appropriate resource as follows:
 
 ```markdown
-[<place-the-badge-inside-the-square-brackets>](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
+[<place-the-badge-inside-the-square-brackets>](https://github.com/jaantollander/pandoc-markdown-latex-pdf/releases)
 ```
 
 Resulting Markdown will look as follows:
 
 ```markdown
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf-example?sort=semver)](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jaantollander/pandoc-markdown-latex-pdf?sort=semver)](https://github.com/jaantollander/markdown-latex-pandoc-example/releases)
 ```
