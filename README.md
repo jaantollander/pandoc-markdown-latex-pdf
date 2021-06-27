@@ -25,6 +25,8 @@ The output from a build will appear under the [`build/`](./build/) directory. In
 - [`output_print.pdf`](./build/output_print.pdf)
 - [`output_ereader.pdf`](./build/output_ereader.pdf)
 
+In practice, we should ignore the `build` directory from version control and rely on releases for releasing versions of the documents. However, we included the build to the version control as a demonstration.
+
 We can build the documents locally using the [`build.sh`](./build.sh) script via a shell. The script requires installing `pandoc` and `xelatex` and having them on the path.
 
 We should give execution right to the `build.sh` shell script.
