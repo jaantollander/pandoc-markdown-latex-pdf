@@ -73,7 +73,20 @@ We should always [choose a license](https://choosealicense.com/) for document pr
 ## Making Documents Citable
 We can follow the instructions on the GitHub guide, [Making Your Code Citable](https://guides.github.com/activities/citable-code/), to create a citable repository by publishing it on [Zenodo](https://zenodo.org/), an Open Science publishing platform operated by CERN. 
 
-First, we need to log in to Zenodo, navigate to our profile, and authorize Zenodo to access our GitHub account. Then, we can choose our document project repository for archival. Zenodo automatically archives each release we make to the repository. We need at least one release to create a Digital Object Identifier (DOI), which provides a unique, immutable pointer to the repository, allowing us to collect citation data or changing the underlying GitHub repository URL without breaking existing links. We can add the DOI as a badge to the `README.md` file. Finally, we can cite our repository by exporting a citation from the Zenodo archive. Zenodo offers BibTeX, JSON, and XML-based citation file formats which you can find under the *Export* section.
+First, we need to log in to Zenodo, navigate to our profile, and authorize Zenodo to access our GitHub account. Then, we can choose our document project repository for archival. Zenodo automatically archives each release we make to the repository. We need at least one release to create a Digital Object Identifier (DOI), which provides a unique, immutable pointer to the repository, allowing us to collect citation data or changing the underlying GitHub repository URL without breaking existing links. We can add the DOI as a badge to the `README.md` file. Finally, we can cite our repository by exporting a citation from the Zenodo archive. Zenodo offers BibTeX, JSON, and XML-based citation file formats which you can find under the *Export* section. For example, citations in the BibTeX format will look as follows:
+
+```bibtex
+@software{jaan_tollander_de_balsch_2021_5035130,
+  author       = {Jaan Tollander de Balsch},
+  title        = {jaantollander/pandoc-markdown-latex-pdf: v0.1.0},
+  month        = jun,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.5035130},
+  url          = {https://doi.org/10.5281/zenodo.5035130}
+}
+```
 
 
 ## Adding Badges
