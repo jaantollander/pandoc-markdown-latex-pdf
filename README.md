@@ -75,7 +75,7 @@ We can follow the instructions on the GitHub guide, [Making Your Code Citable](h
 
 First, we need to log in to Zenodo, navigate to our profile, and authorize Zenodo to access our GitHub account. Then, we can choose our document project repository for archival. Zenodo automatically archives each release we make to the repository. We need at least one release to create a Digital Object Identifier (DOI), which provides a unique, immutable pointer to the repository, allowing us to collect citation data or changing the underlying GitHub repository URL without breaking existing links. We can add the DOI as a badge to the `README.md` file. 
 
-Finally, we can cite our repository by exporting a citation from the Zenodo archive. Zenodo offers BibTeX, JSON, and XML-based citation file formats which you can find under the *Export* section. Alternatively, we can create a [CITATION.cff](./CITATION.cff) file which creates *Cite This Repository* button to the repository's landing page as described in [About Citation Files](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files).
+Finally, we can cite our repository by exporting a citation from the Zenodo archive. Zenodo offers BibTeX, JSON, and XML-based citation file formats which you can find under the *Export* section. Alternatively, we can create a [`CITATION.cff`](./CITATION.cff) file which creates *Cite This Repository* button to the repository's landing page as described in [About Citation Files](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files).
 
 
 ## Adding Badges
